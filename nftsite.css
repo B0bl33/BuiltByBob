@@ -1,0 +1,105 @@
+/* Import a bold font for the navbar brand */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* Style the Navbar */
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0; /* Top and bottom margin to increase navbar height */
+    padding-left: 20px; /* Padding to move it away from the left edge */
+    color: #007bff; /* Set the brand color to blue */
+    animation: dropIn 1s ease-out; /* Animation for dropping effect */
+}
+
+/* Animation for navbar brand */
+@keyframes dropIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Style for the navbar-toggler button */
+.navbar-toggler-icon {
+    background-color: white; /* Make the background transparent */
+    /* Blue border for the toggler icon */
+    border-radius: 2px; /* Slightly round the corners */
+}
+
+/* Customize the inside of the toggle button (three bars) */
+.navbar-toggler-icon::before, .navbar-toggler-icon::after, .navbar-toggler-icon {
+    background-color:   #007bff; /* Change bars color to blue */
+}
+
+/* Style for Navbar Links */
+.navbar-nav .nav-link {
+    padding: 10px 20px; /* Padding to create a button-like effect */
+    border-radius: 10px; /* Rounded corners for the hover effect */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    margin-right: 15px; /* Add margin to space out the links */
+}
+
+.navbar-nav .nav-link:last-child {
+    margin-right: 0; /* Remove margin from the last nav item */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Media Queries for Responsive Navbar Adjustments */
+@media (max-width: 991px) {
+    .navbar-brand {
+        padding-left: 10px; /* Adjust padding on smaller screens */
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center; /* Center-align links on smaller screens */
+        padding: 10px 15px; /* Adjust padding on smaller screens */
+        margin-right: 0; /* Remove margin between links on smaller screens */
+    }
+}
+
+/* Style for the banner image */
+#bantop {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+#banner-image {
+    width: 100%; /* Ensure the banner takes the full width */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+.header-font {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #007bff; /* Match the brand color */
+    margin-bottom: 20px;
+}
+/* Ensure the container maintains spacing */
+.container {
+    margin-top: 50px;
+}
+
+/* Style for shadow images */
+.shadow-image {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow behind the images */
+    border-radius: 10px; /* Slightly rounded corners */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth scaling and shadow on hover */
+}
+
+.shadow-image:hover {
+    transform: scale(1.05); /* Scale image slightly on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly darker shadow on hover */
+}

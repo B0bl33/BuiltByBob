@@ -1,0 +1,163 @@
+/* Import a bold font for the navbar brand */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* Style the Navbar */
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0; /* Top and bottom margin to increase navbar height */
+    padding-left: 20px; /* Padding to move it away from the left edge */
+    color: #007bff; /* Set the brand color to blue */
+    animation: dropIn 1s ease-out; /* Animation for dropping effect */
+}
+
+/* Animation for navbar brand */
+@keyframes dropIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Style for the navbar-toggler button */
+.navbar-toggler-icon {
+    background-color: white; /* Make the background transparent */
+    /* Blue border for the toggler icon */
+    border-radius: 2px; /* Slightly round the corners */
+}
+
+/* Customize the inside of the toggle button (three bars) */
+.navbar-toggler-icon::before, .navbar-toggler-icon::after, .navbar-toggler-icon {
+    background-color:   #007bff; /* Change bars color to blue */
+}
+
+/* Style for Navbar Links */
+.navbar-nav .nav-link {
+    padding: 10px 20px; /* Padding to create a button-like effect */
+    border-radius: 10px; /* Rounded corners for the hover effect */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    margin-right: 15px; /* Add margin to space out the links */
+}
+
+.navbar-nav .nav-link:last-child {
+    margin-right: 0; /* Remove margin from the last nav item */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Media Queries for Responsive Navbar Adjustments */
+@media (max-width: 991px) {
+    .navbar-brand {
+        padding-left: 10px; /* Adjust padding on smaller screens */
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center; /* Center-align links on smaller screens */
+        padding: 10px 15px; /* Adjust padding on smaller screens */
+        margin-right: 0; /* Remove margin between links on smaller screens */
+    }
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('frog.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0; /* Add vertical padding to the hero section */
+    text-align: center;
+    color: white;
+}
+.hero-content {
+    max-width: 800px; /* Restrict the width of the content */
+    margin: 0 auto; /* Center horizontally */
+}
+
+
+
+.hero-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem; /* Adjust the size to be slightly smaller */
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Stronger shadow for the large text */
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .hero-content h2 {
+        font-size: 2rem; /* Adjust font size on smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 3rem; /* Adjust font size on smaller screens */
+    }
+}
+/* Style for shadow images */
+.shadow-image {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow behind the images */
+    border-radius: 10px; /* Slightly rounded corners */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth scaling and shadow on hover */
+    width: 100%; /* Ensure images take up the full width of the column */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.shadow-image:hover {
+    transform: scale(1.05); /* Scale image slightly on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly darker shadow on hover */
+}
+
+/* Ensure columns have padding to avoid images overflowing */
+.row.text-center > .col-md-4 {
+    padding: 0 10px; /* Add padding to columns to ensure proper spacing */
+    box-sizing: border-box; /* Include padding in the element's width and height */
+}
+
+/* Adjust row margin to prevent horizontal scroll */
+.container-fluid .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+#changing-word {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem; /* Adjust the size to be slightly smaller */
+    font-weight: 700;
+    color: #007bff; /* Font color */
+    -webkit-text-stroke: 2px white; /* Increase stroke width for WebKit browsers */
+    text-shadow: 
+        -2px -2px 0 white,  
+         2px -2px 0 white,  
+        -2px  2px 0 white,  
+         2px  2px 0 white,  /* Thicker fallback stroke effect using text-shadow */
+         -2px  0px 0 white,  
+         2px  0px 0 white,  
+         0px -2px 0 white,  
+         0px  2px 0 white; /* Additional shadow directions for thicker effect */
+    margin: 0;
+}
+@media (max-width: 767px) {
+   #changing-word {
+    font-size: 3rem;
+   }
+}
+@media (max-width: 400px) {
+    #changing-word {
+     font-size: 2.7rem;
+    }
+ }
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Graphic Design Portfolio">
+    <title>BL Builders Group</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="builders.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand">BUILT BY BOB</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="index.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid" id="bantop">
+        <div class="row">
+            <div class="col-12" id="bantop">
+                <img src="builderban.png" alt="Banner Image" class="img-fluid" id="banner-image">
+            </div>
+        </div>
+    </div>
+
+  <!-- New Row with Centered H1 Header -->
+  <div class="row text-center my-5">
+    <div class="col-12">
+        <h1 class="header-font">Click for website template:</h1>
+    </div>
+</div>
+    <!-- Existing Row for Three Images -->
+    <div class="container-fluid my-2 px-5">
+        <div class="row text-center">
+            <div class="col-12 col-md-4">
+                <a href="https://b0bl33.github.io/BLBuildingGroup/" target="_blank">
+                    <img src="screen1shot.jpeg" alt="Image 1" class="img-fluid shadow-image my-3">
+                </a>
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="https://b0bl33.github.io/BLBuildingGroup/" target="_blank">
+                    <img src="screen2shot.jpeg" alt="Image 2" class="img-fluid shadow-image my-3">
+                </a>
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="https://b0bl33.github.io/BLBuildingGroup/" target="_blank">
+                    <img src="screen3shot.jpeg" alt="Image 3" class="img-fluid shadow-image my-3">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Container for Two Images -->
+    <div class="container-fluid my-5 px-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="homepage.jpeg" alt="Homepage Image" class="img-fluid shadow-image my-3" onclick="openFullscreen(this)">
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="adban.jpeg" alt="Advertisement Banner" class="img-fluid shadow-image my-3" onclick="openFullscreen(this)">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="portfolio.js"></script>
+
+    <!-- JavaScript to open images in fullscreen -->
+    <script>
+        function openFullscreen(image) {
+            if (image.requestFullscreen) {
+                image.requestFullscreen();
+            } else if (image.webkitRequestFullscreen) { /* Safari */
+                image.webkitRequestFullscreen();
+            } else if (image.msRequestFullscreen) { /* IE11 */
+                image.msRequestFullscreen();
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -70,6 +70,9 @@
         margin-right: 0; /* Remove margin between links on smaller screens */
     }
 }
+#project-image {
+    content: url('veloban.jpeg');
+}
 
 /* Hero Section Styling */
 .hero {
@@ -156,6 +159,11 @@
      font-size: 2.7rem;
     }
  }
+ @media (max-width: 870px) {
+    #project-image {
+        content: url('velosocial1.jpeg');
+    }
+}
 /* Footer */
 footer {
     background-color: #f8f9fa;
